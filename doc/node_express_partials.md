@@ -1,10 +1,5 @@
 #Node - 使用express-partials製作Partial View 
-
-![Node - 使用express-partials製作Partial View](https://lh3.googleusercontent.com/HZa36KzQIAGUaO84ApRCAfmKVOERkrO0azJLOpbKvlE=w800-h494-no)  
-
 由於Express EJS 版本3去除了部份的middleware，不再支援layout.ejs，因此若要製作Partial View，可使用 [express-partials](https://github.com/publicclass/express-partials)。  
-
-<!-- more -->
 
 步驟如下：  
 
