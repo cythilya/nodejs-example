@@ -4,3 +4,4 @@
 	- [Hello Node 2](hello2.js)
 	- [Hello Node with EJS](helloejs)
 - [使用express-partials製作Partial View](doc/node_express_partials.md)
+- [使用模版引擎 Handlebars](doc/node_handlebars.md)
