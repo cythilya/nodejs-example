@@ -25,3 +25,4 @@
 ---
 ####Reference
 - [express-partials 說明文件](https://github.com/publicclass/express-partials)：Express 3.x Layout & Partial support.
+- [網誌版 - Node - 使用express-partials製作Partial View](http://cythilya.blogspot.tw/2015/08/node-express-partials.html)

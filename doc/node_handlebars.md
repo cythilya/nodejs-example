@@ -89,3 +89,4 @@ Partial View 一般會放在 views > partials 資料夾裡面。建立「weather
 ---
 ####Reference
 - [Handlebars.js: Minimal Templating on Steroids](http://handlebarsjs.com/expressions.html)
+- [網誌版 - Node - 使用模版引擎 Handlebars](http://cythilya.blogspot.tw/2015/08/node-handlebars.html)

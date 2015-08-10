@@ -107,6 +107,7 @@ index.ejs
 - [Hello node.js - win7中的nodejs(1) 安裝篇至hello world](http://blog.friendo.com.tw/posts/238208-nodejs)：安裝Node並寫一個Hello World。
 - [Hello node.js - win7中的nodejs(2) IDE with Sublime](http://blog.friendo.com.tw/posts/243372-hello-nodejs-win7-nodejs-b-ide-environment-preparation)：Sublime實用工具安裝。
 - [使用Node.js + Express建構一個簡單的微博網站](http://cythilya.blogspot.tw/2014/11/nodejs-express-microblog.html)：「Node.js開發指南」閱讀筆記與實作範例。
+- [網誌版 - Hello Node - 基本設定和簡單範例](http://cythilya.blogspot.tw/2015/08/hello-node.html)
 
 ####參考資料
 - [DOS指令/命令提示字元 簡易使用教學](http://readandplay.pixnet.net/blog/post/156379832-dos%E6%8C%87%E4%BB%A4-%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E5%AD%97%E5%85%83-%E7%B0%A1%E6%98%93%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8)：一些DOS指令，例如：切換資料夾。
