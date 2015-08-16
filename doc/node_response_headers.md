@@ -8,3 +8,6 @@ Response Headers給駭客一個可以入侵網站的地方，具有資安意識�
 資訊隱藏。  
 
 ![隱藏Response Headers資訊](https://lh3.googleusercontent.com/dku9j2GcJMxlRAWxMWcSiICeuZhIruz-XeGqMi6w5xM=w557-h361-no)
+
+---
+[Node - 隱藏Response Headers資訊](http://cythilya.blogspot.tw/2015/08/node-response-headers.html)：網誌版。

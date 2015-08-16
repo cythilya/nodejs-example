@@ -362,4 +362,4 @@ Server端收到Client端POST過來的資料，並轉到「thankyou」這個成�
 	});
 
 ---
-
+[Node - 表單處理與檔案上傳 (Form Handling and File Uploads)](http://cythilya.blogspot.tw/2015/08/node-form-handling-and-file-uploads.html)：網誌版。
