@@ -1,9 +1,5 @@
 #Node - 表單處理與檔案上傳 (Form Handling and File Uploads)
-![Node - Form Handling and File Uploads](https://lh3.googleusercontent.com/jdJy5XOzp_TB2brp4880cL0z4mhVzUYq1XwCs0a0pWc=w800-h521-no)  
-
 表單處理與檔案上傳。  
-
-<!-- more-->
 
 ##將用戶端資料傳送給伺服器
 將使用者的資訊傳遞給伺服器有兩種方法：「查詢字串」(querystring)與「請求內文」(request body)。
