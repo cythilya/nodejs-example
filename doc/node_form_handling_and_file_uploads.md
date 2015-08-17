@@ -1,5 +1,9 @@
 #Node - 表單處理與檔案上傳 (Form Handling and File Uploads)
+<!-- ![Node - 表單處理與檔案上傳 (Form Handling and File Uploads)](https://lh3.googleusercontent.com/jdJy5XOzp_TB2brp4880cL0z4mhVzUYq1XwCs0a0pWc=w800-h521-no) -->
+
 表單處理與檔案上傳。  
+
+<!-- more -->
 
 ##將用戶端資料傳送給伺服器
 將使用者的資訊傳遞給伺服器有兩種方法：「查詢字串」(querystring)與「請求內文」(request body)。
@@ -15,7 +19,7 @@
 	- 無資料量限制。
 	- 資料可為binary data，因此可傳輸多媒體檔等檔案格式。
 
-看起來似乎使用「查詢字串」的GET方式傳送表單資料是不安全的，而使用「請求內文」POST方式傳送表單資料是安全的。但實際上，兩者只要使用 **HTTPS** 都是安全的，兩者不使用 **HTTPS*** 都不是安全的。因為如果不使用HTTPS，我們依然可以看到POST的內文資料，容易度與得到GET查詢字串無異。
+看起來似乎使用「查詢字串」的GET方式傳送表單資料是不安全的，而使用「請求內文」POST方式傳送表單資料是安全的。但實際上，兩者只要使用 **HTTPS** 都是安全的，兩者不使用 **HTTPS** 都不是安全的。因為如果不使用HTTPS，我們依然可以看到POST的內文資料，容易度與得到GET查詢字串無異。
 
 總而言之，基於資料傳輸量的限制和保持瀏覽器網址列的簡潔乾淨，建議使用「請求內文」POST方式傳送表單資料。
 
@@ -328,11 +332,11 @@ Server端收到Client端POST過來的資料，並轉到「thankyou」這個成�
 	</form>
 
 ####app.js	
-處理router的部份。相關文件可以參考[jquery-file-upload-middleware](https://github.com/aguidrevitch/jquery-file-upload-middleware)。
+處理router的部份。相關文件可以參考[jquery-file-upload-middleware](https://github.com/aguidrevitch/jquery-file-upload-middleware)。  
 
 	var jqupload = require('jquery-file-upload-middleware');
 	
-	app.use('/upload', function(res, req){
+	app.use('/upload', function(req, res, next){
 	    var now = Date.now();
 	    jqupload.fileHandler({
 	        uploadDir: function(){
@@ -344,18 +348,35 @@ Server端收到Client端POST過來的資料，並轉到「thankyou」這個成�
 	    })(req, res, next);
 	});
 
+我們會將檔案先傳到local端的public資料夾裡面，亦即 `uploadDir` 所回傳的路徑，並且在裡面用now這個隨機變數分更多資料夾，然後將圖檔存在裡面。而對外的公開路徑是 `uploadUrl` 所回傳的路徑，例如：`http://localhost:3000/uploads/1439806832819/node-form-handling-and-file-uploads.jpg`。
+
 ####script.js
 上傳成功後，將上傳成功的檔名列印在畫面上。
 
 	var dfieldPhoto = $('#fieldPhoto');
 	dfieldPhoto.fileupload({
 		dataType: 'json',
+		error: function (xhr) {
+			console.log(xhr);
+		},
+		success: function (response) {
+			console.log(response);
+		},	
 		done: function(e, data){
-			$each(data.result.files, function(index, file){
-				dfieldPhoto.append($('<div class="upload">File uploaded: </div>' + file.originalName));
+			$.each(data.result.files, function(index, file){
+				$('.formContainer').html($('<div class="upload">File uploaded: ' + file.name + '</div>'));
 			})
 		}
 	});
 
+###Demo
+![node - jQuery檔案上傳](https://lh3.googleusercontent.com/1uEpWdoYGWskUhicFQifSy1ZbRwUGlvXd-A_cKYQE1k=w620-h443-no)
+
 ---
-[Node - 表單處理與檔案上傳 (Form Handling and File Uploads)](http://cythilya.blogspot.tw/2015/08/node-form-handling-and-file-uploads.html)：網誌版。
+####相關閱讀
+- [Node - 表單處理與檔案上傳 (Form Handling and File Uploads)](http://cythilya.blogspot.tw/2015/08/node-form-handling-and-file-uploads.html)：網誌版。
+- [使用Node.js + Express建構一個簡單的微博網站](http://cythilya.blogspot.tw/2014/11/nodejs-express-microblog.html)
+- [Hello Node - 基本設定和簡單範例](http://cythilya.blogspot.tw/2015/08/hello-node.html)
+- [Node - 使用express-partials製作Partial View](http://cythilya.blogspot.tw/2015/08/node-express-partials.html)
+- [Node - 使用模版引擎 Handlebars](http://cythilya.blogspot.tw/2015/08/node-handlebars.html)
+- [Node - 隱藏Response Headers資訊](http://cythilya.blogspot.tw/2015/08/node-response-headers.html)
