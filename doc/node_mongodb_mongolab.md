@@ -32,3 +32,6 @@
 ---
 ####參考資料
 - [Easily Develop Node.js and MongoDB Apps with Mongoose](https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications)
+
+---
+[使用平台MongoLab連接MongoDB](http://cythilya.blogspot.tw/2015/09/node-mongodb-mongolab.html)：網誌版。
