@@ -1,4 +1,4 @@
-#Node - 連接MongoDB
+#Node - 使用平台MongoLab連接MongoDB
 在連接MongoDB的時候遇到了一些小問題，將這些問題與解法記錄在這篇文章中。  
 
 使用平台MongoLab。

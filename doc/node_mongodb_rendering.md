@@ -1,9 +1,5 @@
 #Node - 從MongoDB取得資料到套版
-![Node - 從MongoDB取得資料到套版](https://lh3.googleusercontent.com/W-KCr-K0rw-I6n-5pMDQJQNfBsccTS-Rt6yg5Qv-q2OCi1wWB_JgM9LsqZ9OP-a1I_NrS6IyLNw40yHCutH43mNlyC10Xu5xB--egR6fxL2ZvpmoupZPwQQlLgviZqW4Cj7XCqVDAHozNnAa4DAs4oYqBBbc0MlJo3haGif_2E9hfsMV7GjBQh78JvV4Kz-bV90kXdH7J0U9xmMve3pFXa2sWjlKvYMJd0xm8E2eXd4ejc_mYgwWNfD_Uu1X_svRpNGtzWEvC8uIuESpi8KL3K00ISracV9Nuv9scPhjBvurfUdeixkwjPxB8p3aZSxxK31ip4mGZUwHCHUdLnmAfSKHgHkhLe89SmFJd24bOEjqHK2DgsDvnr1MsVT9snx957isbaVNVRtLFdQF8N08otl2rWOV5Xos3sXjY-LzPqQNYT1Pd9veeUDTEXaNRilN_KRHCZVqQj4ZLGuGyekdQGKfrtGdlApwpbh8yogSLbRR5AkSHigNYL8xQOtkF98EpFv9UlpqWlkz7P-Np5CXOtA=w800-h494-no)  
-
 經歷了前面關於Node基本安裝設定、模板引擎的熟悉，與一些基本的語法和操作，接著來到MongoDB的建置和使用，終於要把假資料換掉，使用真實世界的內容展現在畫面上啦。 
-
-<!-- more -->
 
 ##製作Model
 ###定義欄位與資料型別
@@ -153,3 +149,6 @@ View在這裡使用樣板引擎[Handlebars.js](http://handlebarsjs.com)。代入
 
 ###只取出特定資料 - 單一商品
 ![Node - 從MongoDB取得資料到套版](https://lh3.googleusercontent.com/pRA-nUDr7lodH48x4BjGvdQjeBOPGIEuq7KSr_93f2TWypNRYFvUxflnLubpR6BTIfb17yJWEgFE7cmYed8O8QORhN8k30EFyk1_ZFZvATGtHxNVX8Ve-h79ILYPGAG_CxWkNUm_hBI1n0nNRgVMqT9miRUbZKZ60Pi5nFApWer7VYjDW2Uyax4Vq13r1-Ov3qy8AqCb3H8nYMUBdfcjzjzKtMhIV7c31F4usSFii3XKwW7NgmnygvyRFhJAfcgEr_wv8DbUB7853J7qxVaaxmKcC8OsHSar7OyPvO_iG3vggM6LLUAOTU4XwZNamrOs3fRbjZmse0IhSG2CXe6cVkdcwf-MUJfknfsX_f11jjIgrqj9CVl_KSk2IdDGD6_SWHfJpiR_4RAizuCnbV2X0yk3fZP1yZyeX-_S6KDCBYbh4wbJrOuyEIbBhKtOdJ5j2UrpfJZ0a2RRHMabWu8MmME20enKXi5qkDlNipvkWsajjfaRLzKf-A0P5U3IOx-3bO2tJeLNV4l2rr1LLDSBegE=w800-h421-no)
+
+---
+[Node - 從MongoDB取得資料到套版](http://cythilya.blogspot.tw/2015/09/node-mongodb-rendering.html)：網誌版。
