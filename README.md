@@ -9,3 +9,5 @@
 - [表單處理與檔案上傳 (Form Handling and File Uploads)](doc/node_form_handling_and_file_uploads.md)
 - [Cookie and Session](doc/node_cookie_and_session.md)
 - [使用Nodemailer傳送Email](doc/node_nodemailer.md)
+- [使用平台MongoLab連接MongoDB](doc/node_mongodb_mongolab.md)
+- [從MongoDB取得資料到套版](doc/node_mongodb_rendering.md)
